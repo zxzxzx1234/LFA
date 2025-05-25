@@ -42,7 +42,7 @@ def input_is_valid(tape_input, machine):
     return all(symbol in machine['sigma'] for symbol in tape_input)
 
 def simulate_turing_machine():
-    machine = parse_turing_file("turing_input2.txt")
+    machine = parse_turing_file("input_turing.txt")
 
     if not validate_machine(machine) or not all_rules_valid(machine):
         print("Invalid Turing machine definition.")
