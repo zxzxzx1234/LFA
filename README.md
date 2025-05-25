@@ -9,10 +9,15 @@
 [sigma]
 
 -insert the alphabet-
+
 e.g
+
 DFA: 0, 1
+
 NFA: a, b, epsilon
+
 PDA: 0, 1, e, $
+
 Turing: 0, 1, +, _, c
 
 [rules]
