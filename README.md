@@ -16,5 +16,6 @@
 
 * Important rule: name of the inputs should be input_[autonom].txt
 
-For Turing: turing_input2.txt
-For Turing using AI: turing_input.txt
+! For Turing: input_turing.txt
+
+! For Turing using AI: input_turing2.txt
