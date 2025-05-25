@@ -1,4 +1,4 @@
-## Autonom for: DFA, NFA, PDA and Turing Machine.
+## Automaton for: DFA, NFA, PDA and Turing Machine.
 
 # Input format
 
@@ -14,7 +14,7 @@
 
 -insert the rules-
 
-* Important rule: name of the inputs should be input_[autonom].txt
+* Important rule: name of the inputs should be input_[automaton].txt
 
 ! For Turing: input_turing.txt
 
