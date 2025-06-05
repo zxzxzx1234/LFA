@@ -61,15 +61,14 @@ def simulate_turing_machine():
         print("Invalid Turing machine definition.")
         return
 
-    tape = input("Enter tape input (space-separated): ").split()
-    tape += ['_'] * 100
-    if not symbols_match_alphabet(tape, machine):
+    user_input = input("Enter tape input (space-separated): ").split()
+    if not symbols_match_alphabet(user_input, machine):
         print("Invalid tape symbols.")
         return
 
     # initialize tape and head
-    tape += ['_'] * 100
-    head = 0
+    tape = ['_'] * 50 + user_input + ['_'] * 100
+    head = 50
 
     start_state = None
     final_state = None
