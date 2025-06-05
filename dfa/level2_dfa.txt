@@ -1,0 +1,41 @@
+[states]
+entrance S
+hallway 0
+kitchen 0
+kitchen_item 0
+hallway_item 0
+library_item 0
+exit_item F
+basement 0
+garage 0
+kitchen_secret 0
+
+[sigma]
+advance
+turn_left
+collect
+proceed
+release
+go_down
+step_back
+side_step
+inspect
+
+[rules]
+entrance advance hallway
+hallway turn_left kitchen
+kitchen collect kitchen_item
+kitchen_item proceed hallway_item
+hallway_item release hallway_item
+hallway_item proceed library_item
+library_item go_down exit_item
+
+# Additional transitions
+kitchen side_step kitchen_secret
+kitchen_secret proceed hallway
+hallway step_back entrance
+library_item step_back hallway_item
+exit_item step_back library_item
+kitchen inspect basement
+basement proceed hallway
+garage advance kitchen

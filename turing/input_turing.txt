@@ -1,0 +1,39 @@
+[states]
+q0 S
+q1 0
+q2 0
+q3 0
+q4 0
+qf F
+
+[sigma]
+0
+1
++
+_
+c
+
+[rules]
+q0 0 q0 0 R
+q0 1 q0 1 R
+q0 + q0 + R
+q0 _ q1 _ L
+
+q1 0 q2 _ L
+q1 1 q3 _ L
+q1 _ qf _ R
+
+q2 0 q1 0 L
+q2 1 q1 1 L
+q2 + q4 0 L
+q2 _ q4 0 L
+
+q3 0 q1 1 L
+q3 1 q4 c L
+q3 + q4 1 L
+q3 _ q4 1 L
+
+q4 0 q1 1 L
+q4 1 q4 c L
+q4 + q1 1 L
+q4 _ q1 1 L

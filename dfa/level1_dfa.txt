@@ -1,0 +1,27 @@
+[states]
+entrance S
+hallway 0
+library 0
+exit F
+trap 0
+backtrack 0
+
+[sigma]
+step_up
+move_right
+step_down
+go_back
+turn_around
+
+[rules]
+entrance step_up hallway
+hallway move_right library
+library step_down exit
+
+# Alternate paths (non-accepting loops or cycles)
+hallway turn_around backtrack
+backtrack move_right hallway
+library go_back hallway
+hallway go_back entrance
+library turn_around trap
+trap go_back hallway

@@ -1,0 +1,14 @@
+[states]
+q0 S
+q1 0
+q2 F
+
+[sigma]
+a
+b
+epsilon
+
+[rules]
+q0 epsilon q1
+q1 a q1
+q1 b q2

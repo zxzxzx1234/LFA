@@ -1,0 +1,13 @@
+[states]
+q0 S
+qf F
+
+[sigma]
+0
+1
+_
+
+[rules]
+q0 0 q0 1 R
+q0 1 q0 0 R
+q0 _ qf _ R
